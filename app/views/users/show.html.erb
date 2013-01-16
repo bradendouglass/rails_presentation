@@ -1,0 +1,6 @@
+<h2> <%= @user.name.titleize %> Info </h2>
+<ul>
+  <li>email: <%= @user.email %></li>
+  <li>password: <%= @user.password %></li>
+</ul>
+<%= link_to 'Home', users_path %>
