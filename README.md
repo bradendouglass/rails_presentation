@@ -51,5 +51,7 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * Create redirect failed to work because of multiple redirect calls, easy fix when dealing solely with html
 * Js delete is working now, there was a problem with the jQuery selector in destroy.js.erb
 * scope for recent added to user model to keep the recent contacts at the top of the list
+* Now that the shell of the users are done, we are going to need to build the tickets that can be assigned to users
+* 
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
