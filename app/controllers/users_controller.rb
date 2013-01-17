@@ -11,14 +11,13 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    respond_with(@user)
   end
 
   def create
     @user = User.new(params[:user])
     if @user.save
       respond_with(@user) do |format|
-        format.html { redirect_to users_path, 
+        format.html { redirect_to @user, 
           :notice => "Huzzah, #{@user.name} successfully added"}
       end
     else

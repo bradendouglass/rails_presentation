@@ -52,6 +52,9 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * Js delete is working now, there was a problem with the jQuery selector in destroy.js.erb
 * scope for recent added to user model to keep the recent contacts at the top of the list
 * Now that the shell of the users are done, we are going to need to build the tickets that can be assigned to users
-* 
+* I created the ticket model much like the user however, forgot to send the references:user_id so will have to either manually add it to the migration or create another migration 
+* Now we have an index AND a 2nd table we can use rails has_many to connect the tables through their respective model
+* urgency is a range from 1..10 so lets make sure it validates as so along with being a number in general
+* next stop ticket controllers
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
