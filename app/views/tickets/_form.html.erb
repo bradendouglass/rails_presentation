@@ -1,4 +1,4 @@
-<% form_for @ticket do |f| %>
+<%= form_for [@user, @ticket] do |f| %>
   <%= f.label :description, 'Description' %>
   <%= f.text_field :description %>
   <br />

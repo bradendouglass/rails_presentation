@@ -1,6 +1,17 @@
+<div class='three columns'>
 <h2> <%= @user.name.titleize %> Info </h2>
-<ul class= "three columns offset-by-one">
+<ul>
   <li>email: <%= @user.email %></li>
   <li>password: <%= @user.password %></li>
 </ul>
 <%= link_to 'Home', users_path %>
+</div>
+<div class='three columns end'>
+<h2>List of Tickets</h2>
+<ol>
+  <% @tickets.each do |ticket| %>
+    <li> <%= ticket.description  %> </li>
+  <% end %>
+</ol>
+<%= link_to 'New Ticket', new_user_ticket_path(@user) %>
+</div>

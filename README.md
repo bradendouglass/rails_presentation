@@ -58,5 +58,13 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * next stop ticket controllers, but first lets add tickets to routes as a subroute to users to get some welcome route helpers
 * This controller should be sparse, we want to create tickets and that is it for now (form + new/create)
 * form created, links and ticket counts showing on Users page along with a link to add a ticket to the specific user, controller time
+* So form done, need to create the new action along with create to build a new ticket for a user. I will show each ticket that is assigned to a person in the show person section
+* On some of the above sections, due to time constraints, I jumped around a lot and through extra code in. Now I am doing as little code as possible per idea
+* Another problem has popped up, seems like the form for the new tickets model is named correctly, figuring out harder routing errors
+	* Fixed, didn't pass user instance var into form, little syntax slip
+* Everything works, all ticket counts on user's page is updated correctly as well
+* Next up we need to see a list of open tickets on the user's show page
+	* This can be as easy as an instance var in the controller. Short, one liner
+	* Fiddled with column floats in the list of tickets for each user, also added another link to add a tag to the selected user
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
