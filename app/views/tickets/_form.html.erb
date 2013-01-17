@@ -1,0 +1,9 @@
+<% form_for @ticket do |f| %>
+  <%= f.label :description, 'Description' %>
+  <%= f.text_field :description %>
+  <br />
+  <%= f.label :urgency, 'Urgency Rating' %>
+  <%= f.number_field :urgency %>
+  <br />
+  <%= f.submit "Submit" %>
+<% end %>

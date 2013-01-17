@@ -55,6 +55,8 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * I created the ticket model much like the user however, forgot to send the references:user_id so will have to either manually add it to the migration or create another migration 
 * Now we have an index AND a 2nd table we can use rails has_many to connect the tables through their respective model
 * urgency is a range from 1..10 so lets make sure it validates as so along with being a number in general
-* next stop ticket controllers
+* next stop ticket controllers, but first lets add tickets to routes as a subroute to users to get some welcome route helpers
+* This controller should be sparse, we want to create tickets and that is it for now (form + new/create)
+* form created, links and ticket counts showing on Users page along with a link to add a ticket to the specific user, controller time
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/

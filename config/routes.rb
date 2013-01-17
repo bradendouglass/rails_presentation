@@ -1,5 +1,7 @@
 Ticketer::Application.routes.draw do
-  resources :users
+  resources :users do
+    resources :tickets
+  end
   root :to => 'users#index'
 
   # The priority is based upon order of creation:

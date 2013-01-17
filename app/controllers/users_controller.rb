@@ -16,8 +16,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      respond_with(@user) do |format|
-        format.html { redirect_to @user, 
+      respond_with(@user) do |wants|
+        wants.html { redirect_to @user, 
           :notice => "Huzzah, #{@user.name} successfully added"}
       end
     else
@@ -32,8 +32,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      respond_with(@user) do |format|
-        format.html { redirect_to @user, :notice => "Update Successful" }
+      respond_with(@user) do |wants|
+        wants.html { redirect_to @user, :notice => "Update Successful" }
       end
     else
       render :edit, :error => "Something went haywire, please try again"
@@ -43,8 +43,8 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    respond_with do |format| 
-      format.html {redirect_to users_path, :notice => "User punted OUTA here!"}
+    respond_with do |wants| 
+      wants.html {redirect_to users_path, :notice => "User punted OUTA here!"}
     end
   end
 end

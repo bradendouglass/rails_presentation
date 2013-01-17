@@ -1,7 +1,7 @@
 <h2>List of Users</h2>
 <% @users.each do |user| %>
-  <li id="<%= dom_id(user) %>"> <%= link_to user.name.titleize, user_path(user) %> has x tickets... 
-   <%= link_to 'Delete User?', user, confirm: 'Are You Positive?', method: :delete, remote: true %> </li>
+  <li id="<%= dom_id(user) %>"> <%= link_to user.name.titleize, user_path(user) %> has <%= pluralize(user.tickets.count, 'ticket') %>... 
+   <%= link_to 'Delete User?', user, confirm: 'Are You Positive?', method: :delete, remote: true %> or <%= link_to 'Add Ticket', new_user_ticket_path(user) %> </li>
 <% end %>
 
 <%= link_to 'Create User', new_user_path %>
