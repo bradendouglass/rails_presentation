@@ -66,5 +66,6 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * Next up we need to see a list of open tickets on the user's show page
 	* This can be as easy as an instance var in the controller. Short, one liner
 	* Fiddled with column floats in the list of tickets for each user, also added another link to add a tag to the selected user
+* Since tickets are something big than lets create a mailer that fires with something nice, printing the ticket description and urgency
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
