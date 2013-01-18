@@ -71,5 +71,16 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 	* Mailers are pretty easy, make a new method that takes a few arguments, create some instance vars, call
 	* For the views, we need to add the name of the mailer to the views list. For this, it will just be a txt mailer
 	* Since there is a little logic built into this, lets make the mailer call from a private method
+* Back a few bullit points ago I auto hid the tickets while looking at a user; however, I was doing it on a click handler and it wouldn't work
+	* I am just going to toggle the class now and "spice up" the user page a bit
+	* I will add a hidden class to the users's scss file and make a simple hidden class that, when active the display = none
+		* In the comment above I wrote the correct css however, in the file I didn't and it took me to searching Mozilla DN to find my css issue
+		* However, I knew it was an issue with the css due to the fact that I could see the class toggling in the Chrome Dev Tools
+	* For the remainder of this little experiment I am going to focus on attempting to wire backbone up to add, keep track of, and maybe view/delete tickets on the user#show page
+		* There is quite a lot of Rails that I have left out, authentication specifically. However, I feel many of these "features" are best served with a gem and explaining that is boring
+
+###Backbone.js attempt log
+
+* Gem to help us lay the base? Yep, wired up through gemfile
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
