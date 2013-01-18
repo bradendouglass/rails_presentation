@@ -67,5 +67,9 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 	* This can be as easy as an instance var in the controller. Short, one liner
 	* Fiddled with column floats in the list of tickets for each user, also added another link to add a tag to the selected user
 * Since tickets are something big than lets create a mailer that fires with something nice, printing the ticket description and urgency
+	* However, flooding people with tickets is no good, so if the urgency is above 7 lets send them the mailer on create
+	* Mailers are pretty easy, make a new method that takes a few arguments, create some instance vars, call
+	* For the views, we need to add the name of the mailer to the views list. For this, it will just be a txt mailer
+	* Since there is a little logic built into this, lets make the mailer call from a private method
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
