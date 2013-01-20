@@ -82,5 +82,6 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 ###Backbone.js attempt log
 
 * Gem to help us lay the base? Yep, wired up through gemfile
+	* Currently there are a couple of options in this area, I went with backbone-on-rails gem due to the documentation + I like its' simplicity
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
