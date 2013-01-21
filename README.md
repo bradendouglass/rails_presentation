@@ -83,5 +83,10 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 
 * Gem to help us lay the base? Yep, wired up through gemfile
 	* Currently there are a couple of options in this area, I went with backbone-on-rails gem due to the documentation + I like its' simplicity
+* Following along with the gem, file added and generators run to get us up and going
+* The focus of backbone will be on the tickets. I already attempted to add some UX functionality but will complete it with backbone.
+* This will mean that none of my ticket models will respond to html
+	* To fix this I will rip out the estraneous stuff in the controller, make a respond_to block and just respond_with json
+* Due to the heavy amount of app changes there will be a different branch, DVS for the win.
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
