@@ -86,7 +86,7 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * Following along with the gem, file added and generators run to get us up and going
 * The focus of backbone will be on the tickets. I already attempted to add some UX functionality but will complete it with backbone.
 * This will mean that none of my ticket models will respond to html
-	* To fix this I will rip out the estraneous stuff in the controller, make a respond_to block and just respond_with json
-
+	* To fix this I will rip out the estraneous stuff in the controller, make a respond_to block and just respond_with json for needed actions
+* For the mailer, I haven't done much with it so I will keep the code there, for now, it won't do anything
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/

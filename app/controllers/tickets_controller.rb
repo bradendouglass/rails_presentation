@@ -1,22 +1,11 @@
 class TicketsController < ApplicationController
+  respond_to :json
   def index
-    @tickets = Ticket.all
-  end
-
-  def new
-    @user = User.find(params[:user_id])
-    @ticket = @user.tickets.new
+    respond_with Ticket.all
   end
 
   def create
-    @user = User.find(params[:user_id])
-    @ticket = @user.tickets.new(params[:ticket])
-    if @ticket.save
-      urgent_mailer(@ticket, @user)
-      redirect_to user_path(@user), :notice => 'Ticket created'
-    else
-      render :new, :error => 'Error occured while creating the ticket, sorry'
-    end
+    respnd_with Ticket.create
   end
   
   private
