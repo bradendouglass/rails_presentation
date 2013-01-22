@@ -1,0 +1,5 @@
+<ol>
+<% for ticket in @tickets.model: %>
+	<li><%= ticket.get('description') %></li>
+<% end %>
+</ol>

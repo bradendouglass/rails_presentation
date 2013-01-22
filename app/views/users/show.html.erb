@@ -8,12 +8,6 @@
 </div>
 <div class='three columns end'>
 <h2>List of Tickets</h2>
-<ol class='tickets'>
-  <% @tickets.each do |ticket| %>
-    <li> <%= ticket.description  %> </li>
-  <% end %>
-</ol>
-<%= link_to 'New Ticket', new_user_ticket_path(@user) %>
-<br />
-<a href="#" class='toggle'>Toggle Tickets</a>
+<div id="tickets"></div>
+<%# link_to 'New Ticket', new_user_ticket_path(@user) %>
 </div>

@@ -3,7 +3,9 @@ window.Ticketer =
   Collections: {}
   Views: {}
   Routers: {}
-  initialize: -> alert 'Hello from Backbone!'
+  initialize: ->
+    new Ticketer.Routers.Tickets
+    Backbone.history.start(pushState: true)
 
 $(document).ready ->
   Ticketer.initialize()

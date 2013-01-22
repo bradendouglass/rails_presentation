@@ -2,7 +2,11 @@ Ticketer::Application.routes.draw do
   resources :users do
     resources :tickets
   end
+  scope 'api' do
+    resources :tickets
+  end
   root :to => 'users#index'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -88,5 +88,24 @@ was created today(Jan 16) but, it should be a good "off the cuff" exercise. Incl
 * This will mean that none of my ticket models will respond to html
 	* To fix this I will rip out the estraneous stuff in the controller, make a respond_to block and just respond_with json for needed actions
 * For the mailer, I haven't done much with it so I will keep the code there, for now, it won't do anything
+* With this gem there is a simple scaffold generator that will be used to get us up and running with our tickets
+* My mind tends to center around controllers in Rails so I automattically start fiddling with Backbone routers
+	* I know that the tickets needs to be available under /users/:id so their will be one route to there for our router
+* Next stop views, we need to tell the collection where to get the list of json items which will just be the a GET request to /tickets
+* With no tests, the best way to see if this url is working, we can fire open Chrome and use a plugin for Json or app like rested or postman
+* Problem found, no route defined. Well that would make sense since we nested the tickets under our users. For now lets change this to /users/:id/tickets
+* Ok, so now when we nav to users/:id/tickets we get some json, just what we need
+* To make my life seamingly easy, I will grab all the tickets by creating a scoped route entitled api in the rails app
+* This forces me to sort the tickets before pushing them to the view by their appropriate owner which should be in the url
+* For now let's add the correct url to the collection and jump back into the router to make an instance of the collection and fetch all the records
+* In the router we need to fill in the index by competing the function.
+	* This function will create a new instance of the view with the collection and render it to the html
+	* Since the tag default in backbone is div, we are making a list so lets change it in the view to li
+* While we are in the view, lets write the initialize to listen on the reset action and the render to render the collection
+* Before there was a toggle ticket button, this will be ripped out because backbone isn't showing the tickets...yet
+	* In this case, I will go through the Chrome Web Inspector to troubleshoot
+	* Still not showing the list of tickets, presumed a route error for now but attempted with both a splat and a :
+
+
 
 [1]: http://blog.devinterface.com/2010/06/rails-best-practices-1-fat-model-skinny-controller/
